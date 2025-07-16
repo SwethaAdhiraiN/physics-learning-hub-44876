@@ -1,0 +1,63 @@
+.courses-page {
+  max-width: 850px;
+  margin: 2.3em auto 0 auto;
+  padding: 1.1em;
+}
+.courses-page h2 {
+  color: var(--primary, #b11654);
+  margin-bottom: 1.7em;
+  text-align: left;
+}
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2em;
+}
+.course-card {
+  flex: 1 0 270px;
+  background: #fff;
+  border-radius: 1em;
+  box-shadow: 0 0 5px 1px rgba(190,120,150,0.10);
+  padding: 1.2em 1.2em 1.4em 1.2em;
+  min-width: 230px;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.course-card h4 {
+  color: var(--primary, #b11654);
+  font-size: 1.18em;
+  margin-top: 0;
+}
+.course-card .desc {
+  color: #666;
+  margin-bottom: 1.6em;
+  font-size: 1em;
+}
+.course-card .actions {
+  display: flex;
+  align-items: center;
+}
+.btn-small {
+  background: var(--secondary, #424242);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.97rem;
+  padding: 0.54em 1.2em;
+  cursor: pointer;
+  transition: background 0.13s;
+  text-decoration: none;
+}
+.btn-small.main {
+  background: var(--primary, #b11654);
+}
+.btn-small:hover {
+  background: var(--accent, #ff9800);
+  color: #232126;
+}
+@media (max-width:680px) {
+  .course-list { flex-direction: column; gap:0.6em;}
+  .course-card { margin-bottom: 0.8em; }
+}

@@ -1,0 +1,102 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-secondary, #eee);
+  color: var(--text-primary, #222);
+  padding: 0 2rem;
+  height: 64px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  box-shadow: 0 2px 8px 0 rgba(50, 50, 60, 0.07);
+  z-index: 999;
+  transition: background-color 0.3s;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--primary, #b11654);
+  text-decoration: none;
+}
+
+.brand-accent {
+  margin-right: 0.3em;
+  color: var(--accent, #ff9800);
+  font-size: 1.5em;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__links a {
+  color: var(--text-primary, #282c34);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  font-weight: 500;
+}
+.navbar__links a.active, .navbar__links a:focus {
+  color: #fff;
+  background: var(--primary, #b11654);
+}
+.navbar__links a:hover {
+  background: var(--border-color, #e0e0e5);
+}
+.theme-toggle-btn {
+  background: var(--button-bg, #007bff);
+  color: var(--button-text, #fff);
+  border: none;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.theme-toggle-btn:hover {
+  background: var(--accent, #ff9800);
+}
+.navbar__logout {
+  background: none;
+  border: none;
+  color: var(--primary, #b11654);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 10px;
+  transition: color 0.15s;
+}
+.navbar__logout:hover {
+  color: var(--accent, #ff9800);
+}
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    gap: 0.3em;
+    padding: 0.2em 0.7em;
+  }
+  .navbar__brand {
+    margin-bottom: 0.1em;
+  }
+  .navbar__links {
+    gap: 0.6em;
+  }
+}

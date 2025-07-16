@@ -1,0 +1,46 @@
+.dashboard {
+  max-width: 680px;
+  margin: 2.5em auto 0 auto;
+  padding: 1.2em;
+  background: var(--bg-secondary, #f7f7fa);
+  border-radius: 1.5em;
+  box-shadow: 0 1px 5px 0 rgba(210,180,200,0.13);
+  text-align: left;
+}
+.dashboard h2 {
+  margin-bottom: 1.3em;
+  color: var(--primary, #b11654);
+  font-size: 1.6rem;
+}
+.dashboard-card-wrap {
+  display: flex;
+  gap: 1.4em;
+  flex-wrap: wrap;
+}
+.dashboard-card {
+  background: #fff;
+  padding: 1.1em 1.4em;
+  border-radius: 1em;
+  box-shadow: 0 0 5px 1px rgba(190,120,150,0.12);
+  flex: 1 1 240px;
+  margin-bottom: 1.7em;
+}
+.dashboard-card h4 {
+  color: var(--secondary, #424242);
+  margin-top: 0;
+  margin-bottom: .7em;
+  font-size: 1.18em;
+}
+.dashboard-card ul {
+  padding-left: 1.1em;
+  font-size: 0.97em;
+  line-height: 1.62;
+}
+.dashboard-card .score {
+  font-weight: 700;
+  color: var(--primary, #b11654);
+}
+@media (max-width:600px) {
+  .dashboard, .dashboard-card { border-radius: 0.5em; }
+  .dashboard-card-wrap { flex-direction: column; gap:0.35em; }
+}
