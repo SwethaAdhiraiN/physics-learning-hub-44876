@@ -33,6 +33,12 @@ function Dashboard({ user }) {
             </li>
           </ul>
         </div>
+        <div className="dashboard-card">
+          <h4>Doubt Clearance</h4>
+          <p>
+            <Link to="/doubts">Ask questions or view your past doubts →</Link>
+          </p>
+        </div>
       </div>
       <div style={{marginTop:"2.5em", color:"#888"}}>
         Ready to continue? <Link to="/courses">Pick a course!</Link>

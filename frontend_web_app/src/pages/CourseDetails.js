@@ -28,6 +28,55 @@ const COURSE_MATERIALS = {
       { id: "mat7", title: "Schrödinger Equation Basics", url: "#" },
     ],
   },
+  phy205: {
+    title: "Optics",
+    description: "Geometric and wave optics—explore light, lenses, mirrors, and diffraction.",
+    materials: [
+      { id: "mat8", title: "Reflection and Refraction", url: "#" },
+      { id: "mat9", title: "Lens and Mirror Equations", url: "#" },
+      { id: "mat10", title: "Interference of Light", url: "#" },
+    ],
+  },
+  phy310: {
+    title: "Thermodynamics",
+    description: "The study of heat, temperature, and the laws that govern them.",
+    materials: [
+      { id: "mat11", title: "Zeroth, First and Second Laws", url: "#" },
+      { id: "mat12", title: "Heat Engines and Refrigerators", url: "#" },
+    ],
+  },
+  phy320: {
+    title: "Nuclear Physics",
+    description: "Radioactivity, nuclear reactions, and energy generation.",
+    materials: [
+      { id: "mat13", title: "Types of Radioactive Decay", url: "#" },
+      { id: "mat14", title: "Fission and Fusion", url: "#" },
+    ],
+  },
+  phy401: {
+    title: "Astrophysics",
+    description: "A tour of the cosmos, from stars to black holes.",
+    materials: [
+      { id: "mat15", title: "Stellar Formation and Evolution", url: "#" },
+      { id: "mat16", title: "Cosmological Principles", url: "#" },
+    ],
+  },
+  phy430: {
+    title: "Solid State Physics",
+    description: "Explore how crystals, metals, and semiconductors work.",
+    materials: [
+      { id: "mat17", title: "Crystal Lattices", url: "#" },
+      { id: "mat18", title: "Electronic Properties", url: "#" },
+    ],
+  },
+  phy450: {
+    title: "Classical Mechanics",
+    description: "Advanced mechanics and mathematical formulations.",
+    materials: [
+      { id: "mat19", title: "Lagrangian Mechanics", url: "#" },
+      { id: "mat20", title: "Hamiltonian Formulation", url: "#" },
+    ],
+  },
 };
 
 /**

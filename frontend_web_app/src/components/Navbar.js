@@ -35,6 +35,11 @@ function Navbar({ theme, onToggleTheme, authUser, onLogout }) {
               </Link>
             </li>
             <li>
+              <Link to="/doubts" className={location.pathname.startsWith("/doubts") ? "active" : ""}>
+                Doubt Clearance
+              </Link>
+            </li>
+            <li>
               <button className="navbar__logout" onClick={onLogout}>
                 Logout
               </button>

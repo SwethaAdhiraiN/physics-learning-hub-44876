@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Courses.css";
 
-// Simulate backend with some mock courses
+/**
+ * Extended mock data to cover a broader range of physics courses/topics.
+ */
 const COURSE_DATA = [
   {
     id: "phy101",
@@ -20,6 +22,42 @@ const COURSE_DATA = [
     id: "phy301",
     title: "Quantum Physics",
     desc: "Entering the world of uncertainty and probabilities.",
+    registered: false,
+  },
+  {
+    id: "phy205",
+    title: "Optics",
+    desc: "Geometric and wave optics—light, lenses, mirrors, diffraction, and more.",
+    registered: false,
+  },
+  {
+    id: "phy310",
+    title: "Thermodynamics",
+    desc: "Study of heat, temperature, laws of thermodynamics, and practical applications.",
+    registered: false,
+  },
+  {
+    id: "phy320",
+    title: "Nuclear Physics",
+    desc: "Inside the atomic nucleus: radioactivity, fission, fusion, and nuclear technology.",
+    registered: false,
+  },
+  {
+    id: "phy401",
+    title: "Astrophysics",
+    desc: "Physics of the universe: stars, galaxies, cosmology, and space science.",
+    registered: false,
+  },
+  {
+    id: "phy430",
+    title: "Solid State Physics",
+    desc: "Properties of solids, crystal structures, conductors, and semiconductors.",
+    registered: false,
+  },
+  {
+    id: "phy450",
+    title: "Classical Mechanics",
+    desc: "Advanced mechanics: Newtonian, Lagrangian, and Hamiltonian formulation.",
     registered: false,
   },
 ];

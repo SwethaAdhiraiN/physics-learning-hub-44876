@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
@@ -51,6 +51,9 @@ function App() {
   function PrivateRoute({ children }) {
     return authUser ? children : <Navigate to="/login" replace />;
   }
+
+  // Lazy load for doubts feature
+  const DoubtClearance = React.lazy(() => import("./pages/DoubtClearance"));
 
   return (
     <Router>
@@ -107,6 +110,17 @@ function App() {
             element={
               <PrivateRoute>
                 <TestPage />
+              </PrivateRoute>
+            }
+          />
+          {/* Doubt Clearance Session Route */}
+          <Route
+            path="/doubts"
+            element={
+              <PrivateRoute>
+                <Suspense fallback={<div>Loading...</div>}>
+                  <DoubtClearance />
+                </Suspense>
               </PrivateRoute>
             }
           />
